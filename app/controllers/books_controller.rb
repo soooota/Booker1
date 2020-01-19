@@ -1,7 +1,7 @@
 class BooksController < ApplicationController
   def index
-    @books=Book.all
     @book = Book.new
+    @books=Book.all
   end
 
   def show
@@ -27,10 +27,8 @@ class BooksController < ApplicationController
       flash[:notice] = "Book was successfully destroyed."
 
   end
-
   def create
     @book = Book.new(book_params)
-    
      if  @book.save
         redirect_to book_path(@book.id)
         flash[:notice] = "Book was successfully created."
