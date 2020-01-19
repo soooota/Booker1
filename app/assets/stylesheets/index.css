@@ -1,0 +1,22 @@
+td {
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+table, h1,h2,.rails{
+    margin-left: 5%;
+}
