@@ -37,7 +37,7 @@
    <div class="alert alert-warning">
      <ul>
       <% @book.errors.full_messages.each do |message| %>
-        <li> It can't be blank </li>
+        <li><%= message %> </li>
         <% end %>
      </ul>
    </div>
